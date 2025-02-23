@@ -5,7 +5,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: linear-gradient(#000000, #333333);
     --foreground: #ededed;
   }
 }
@@ -39,4 +39,33 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.button {
+  min-width: 400px;
+  min-height: 50px;
+  border: 1px solid #ab7c52;
+  text-align: center;
+  color: #ab7c52;
+  background: none;
+}
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(to right, #000000 0%, #333333 100%);
+  position: fixed;
+  top: 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.navbar-content {
+  display: flex;
+  /* justify-content: space-evenly */
+}
+
+.button:hover {
+  background: #ab7c52;
+  color: #333333;
 }
